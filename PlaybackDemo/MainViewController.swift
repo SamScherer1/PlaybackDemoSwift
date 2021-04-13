@@ -14,10 +14,8 @@ class MainViewController: UIViewController, DJISDKManagerDelegate {
     
     @IBOutlet weak var connectStatusLabel: UILabel!
     @IBOutlet weak var modelNameLabel: UILabel!
+    @IBOutlet weak var connectButton: UIButton!
     
-    @IBAction func onConnectButtonClicked(_ sender: Any) {
-        print("TODO what goes here? can action be removed?")
-    }
     var product : DJIBaseProduct?
     
     override func viewDidLoad() {
@@ -30,18 +28,48 @@ class MainViewController: UIViewController, DJISDKManagerDelegate {
     }
     
     func initUI() {
-        print("todo: initUI")
+        self.modelNameLabel.isHidden = true
+        //Disable the connect button by default
+        self.connectButton.isEnabled = false
     }
     
-    func updateStatusBasedOn(product:DJIBaseProduct) {
-        print("todo: updateStatusBasedOn:")
+    func productConnected(_ product: DJIBaseProduct?) {
+        if let product = product {
+            self.product = product
+            self.connectButton.isEnabled = true
+        }
+        self.updateStatusBasedOn(product: product)
+        
+        ///If this demo is used in China, it's required to login to your DJI account to activate the application. Also you need to use DJI Go app to bind the aircraft to your DJI account. For more details, please check this demo's tutorial.
+        DJISDKManager.userAccountManager().logIntoDJIUserAccount(withAuthorizationRequired: false) {(state: DJIUserAccountState, error: Error?) in
+            if let error = error {
+                DemoUtility.showResult(result: NSString.init(format: "Login failed: %@", error.localizedDescription))
+            }
+        }
+    }
+    
+    func updateStatusBasedOn(product:DJIBaseProduct?) {
+        self.connectStatusLabel.text = NSLocalizedString("Status: Product Connected", comment: "")
+        if let product = product {
+            self.modelNameLabel.text = NSString.init(format: "Model: %@", product.model!) as String
+            self.modelNameLabel.isHidden = false
+        } else {
+            //TODO: use localized string
+            self.connectStatusLabel.text = "Status: Product Not Connected"
+            self.modelNameLabel.text = "Model Unknown"
+        }
     }
     
     func appRegisteredWithError(_ error: Error?) {
-        print("todo: appRegisteredWithError called")
+        if let error = error {
+            DemoUtility.showResult(result: NSString.init(format: "Registration Error %@", error.localizedDescription))
+        } else {
+            DemoUtility.showResult(result: "Registration Success")
+            DJISDKManager.startConnectionToProduct()
+        }
     }
     
     func didUpdateDatabaseDownloadProgress(_ progress: Progress) {
-        print("todo: didUpdateDatabaseDownloadProgress called")
+        print("Never called...")
     }
 }

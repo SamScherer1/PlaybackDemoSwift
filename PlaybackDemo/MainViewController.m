@@ -34,22 +34,8 @@
 //}
 //
 //
-//- (void)initUI
-//{
-//    self.title = @"DJI GEO Demo";
-//    self.modelNameLabel.hidden = YES;
-//    //Disable the connect button by default
-//    [self.connectButton setEnabled:NO];
-//}
-//
-//- (void)didReceiveMemoryWarning {
-//    [super didReceiveMemoryWarning];
-//    // Dispose of any resources that can be recreated.
-//}
-//
-//- (IBAction)onConnectButtonClicked:(id)sender {
-//
-//}
+
+
 //
 //-(void) updateStatusBasedOn:(DJIBaseProduct* )newConnectedProduct {
 //    if (newConnectedProduct){
@@ -68,7 +54,6 @@
 //{
 //    if (!error) {
 //        [DemoUtility showResultWithResult:@"Registration Success"];
-//        DemoUtility *demoUtility = [DemoUtility new];
 //        [DJISDKManager startConnectionToProduct];
 ////        [DJISDKManager enableBridgeModeWithBridgeAppIP:@"192.168.8.107"];
 //

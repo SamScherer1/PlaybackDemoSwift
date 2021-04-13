@@ -29,7 +29,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onConnectButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sE-72-1YO"/>
                                     <segue destination="JhJ-IO-CjI" kind="show" id="4iI-ba-g0P"/>
                                 </connections>
                             </button>
@@ -84,6 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zFd-PV-DOq"/>
                     <connections>
+                        <outlet property="connectButton" destination="APQ-YS-lEl" id="nPE-Hc-Ies"/>
                         <outlet property="connectStatusLabel" destination="YEs-2P-9c8" id="bmt-ci-CN4"/>
                         <outlet property="modelNameLabel" destination="kAT-dJ-O9w" id="zTS-R1-qXp"/>
                     </connections>
