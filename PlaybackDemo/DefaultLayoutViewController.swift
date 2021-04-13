@@ -10,8 +10,16 @@ import Foundation
 import DJIUXSDK
 
 class DefaultLayoutViewController: DUXDefaultLayoutViewController {
+    
+    @IBOutlet weak var playbackBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("TODO: set preview button for playback state")
+        
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad) {
+            self.playbackBtn.setImage(UIImage.init(named: "playback_icon_iPad"), for: UIControl.State.normal)
+        } else {
+            self.playbackBtn.setImage(UIImage.init(named: "playback_icon"), for: UIControl.State.normal)
+        }
     }
 }

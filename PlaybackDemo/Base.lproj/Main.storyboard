@@ -95,7 +95,7 @@
         <!--Default Layout View Controller-->
         <scene sceneID="Wif-ry-ldc">
             <objects>
-                <viewController id="JhJ-IO-CjI" customClass="DefaultLayoutViewController" sceneMemberID="viewController">
+                <viewController id="JhJ-IO-CjI" customClass="DefaultLayoutViewController" customModule="PlaybackDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MV4-m5-haC"/>
                         <viewControllerLayoutGuide type="bottom" id="m3d-cu-DiW"/>
@@ -128,7 +128,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="playbackBtn" destination="2lZ-0A-QPy" id="NBt-NR-bcN"/>
+                        <outlet property="playbackBtn" destination="2lZ-0A-QPy" id="xez-7x-3I9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAQ-0f-Ojp" userLabel="First Responder" sceneMemberID="firstResponder"/>

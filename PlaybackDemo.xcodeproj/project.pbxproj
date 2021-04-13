@@ -14,7 +14,6 @@
 		A4E00E891F73640C0023C6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E731F73640C0023C6F0 /* Assets.xcassets */; };
 		A4E00E8A1F73640C0023C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */; };
 		A4E00E8B1F73640C0023C6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E761F73640C0023C6F0 /* Main.storyboard */; };
-		A4E00E8C1F73640C0023C6F0 /* DefaultLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */; };
 		A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */; };
 		A4E00E901F73640C0023C6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7F1F73640C0023C6F0 /* main.m */; };
 		A4E00E911F73640C0023C6F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E811F73640C0023C6F0 /* MainViewController.m */; };
@@ -52,8 +51,6 @@
 		A4E00E731F73640C0023C6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E00E751F73640C0023C6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E00E771F73640C0023C6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A4E00E781F73640C0023C6F0 /* DefaultLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultLayoutViewController.h; sourceTree = "<group>"; };
-		A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultLayoutViewController.m; sourceTree = "<group>"; };
 		A4E00E7A1F73640C0023C6F0 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtility.h; sourceTree = "<group>"; };
 		A4E00E7C1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIPlaybackMultiSelectViewController.h; sourceTree = "<group>"; };
 		A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIPlaybackMultiSelectViewController.m; sourceTree = "<group>"; };
@@ -123,8 +120,6 @@
 				A4E00E731F73640C0023C6F0 /* Assets.xcassets */,
 				A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */,
 				A4E00E761F73640C0023C6F0 /* Main.storyboard */,
-				A4E00E781F73640C0023C6F0 /* DefaultLayoutViewController.h */,
-				A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */,
 				3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */,
 				A4E00E7A1F73640C0023C6F0 /* DemoUtility.h */,
 				3A3C14DE2625F80100CDD27D /* DemoUtility.swift */,
@@ -283,7 +278,6 @@
 				A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */,
 				A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */,
 				A4E00E921F73640C0023C6F0 /* PlaybackViewController.m in Sources */,
-				A4E00E8C1F73640C0023C6F0 /* DefaultLayoutViewController.m in Sources */,
 				3A3C14F12626100900CDD27D /* MainViewController.swift in Sources */,
 				A4E00E901F73640C0023C6F0 /* main.m in Sources */,
 				3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */,

@@ -16,7 +16,7 @@ class MainViewController: UIViewController, DJISDKManagerDelegate {
     @IBOutlet weak var modelNameLabel: UILabel!
     
     @IBAction func onConnectButtonClicked(_ sender: Any) {
-        
+        print("TODO what goes here? can action be removed?")
     }
     var product : DJIBaseProduct?
     
