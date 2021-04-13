@@ -10,12 +10,11 @@
 		3A3C14DD2625F62800CDD27D /* DefaultLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */; };
 		3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DE2625F80100CDD27D /* DemoUtility.swift */; };
 		3A3C14F12626100900CDD27D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14F02626100900CDD27D /* MainViewController.swift */; };
-		A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E721F73640C0023C6F0 /* AppDelegate.m */; };
+		3A3C14FF262637A500CDD27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14FE262637A500CDD27D /* AppDelegate.swift */; };
 		A4E00E891F73640C0023C6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E731F73640C0023C6F0 /* Assets.xcassets */; };
 		A4E00E8A1F73640C0023C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */; };
 		A4E00E8B1F73640C0023C6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E761F73640C0023C6F0 /* Main.storyboard */; };
 		A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */; };
-		A4E00E901F73640C0023C6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7F1F73640C0023C6F0 /* main.m */; };
 		A4E00E911F73640C0023C6F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E811F73640C0023C6F0 /* MainViewController.m */; };
 		A4E00E921F73640C0023C6F0 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E831F73640C0023C6F0 /* PlaybackViewController.m */; };
 		A4E00E931F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E851F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController_iPad.xib */; };
@@ -42,12 +41,11 @@
 		3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayoutViewController.swift; sourceTree = "<group>"; };
 		3A3C14DE2625F80100CDD27D /* DemoUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUtility.swift; sourceTree = "<group>"; };
 		3A3C14F02626100900CDD27D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A3C14FE262637A500CDD27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4314AFD2970DB5178B571574 /* Pods_PlaybackDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaybackDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E44FC47D98B416B82B08048 /* Pods-PlaybackDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8D038CCF8617728F1DAE4F88 /* Pods-PlaybackDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A48847C51EA2697F00CE5843 /* PlaybackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaybackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4E00E711F73640C0023C6F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A4E00E721F73640C0023C6F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A4E00E731F73640C0023C6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E00E751F73640C0023C6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E00E771F73640C0023C6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 		A4E00E7C1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIPlaybackMultiSelectViewController.h; sourceTree = "<group>"; };
 		A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIPlaybackMultiSelectViewController.m; sourceTree = "<group>"; };
 		A4E00E7E1F73640C0023C6F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4E00E7F1F73640C0023C6F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4E00E801F73640C0023C6F0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A4E00E811F73640C0023C6F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A4E00E821F73640C0023C6F0 /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
@@ -115,9 +112,8 @@
 		A4E00E701F73640C0023C6F0 /* PlaybackDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A4E00E711F73640C0023C6F0 /* AppDelegate.h */,
-				A4E00E721F73640C0023C6F0 /* AppDelegate.m */,
 				A4E00E731F73640C0023C6F0 /* Assets.xcassets */,
+				3A3C14FE262637A500CDD27D /* AppDelegate.swift */,
 				A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */,
 				A4E00E761F73640C0023C6F0 /* Main.storyboard */,
 				3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */,
@@ -126,7 +122,6 @@
 				A4E00E7C1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.h */,
 				A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */,
 				A4E00E7E1F73640C0023C6F0 /* Info.plist */,
-				A4E00E7F1F73640C0023C6F0 /* main.m */,
 				A4E00E801F73640C0023C6F0 /* MainViewController.h */,
 				A4E00E811F73640C0023C6F0 /* MainViewController.m */,
 				3A3C14F02626100900CDD27D /* MainViewController.swift */,
@@ -275,11 +270,10 @@
 			files = (
 				A4E00E911F73640C0023C6F0 /* MainViewController.m in Sources */,
 				3A3C14DD2625F62800CDD27D /* DefaultLayoutViewController.swift in Sources */,
-				A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */,
 				A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */,
 				A4E00E921F73640C0023C6F0 /* PlaybackViewController.m in Sources */,
+				3A3C14FF262637A500CDD27D /* AppDelegate.swift in Sources */,
 				3A3C14F12626100900CDD27D /* MainViewController.swift in Sources */,
-				A4E00E901F73640C0023C6F0 /* main.m in Sources */,
 				3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
