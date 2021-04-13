@@ -12,6 +12,12 @@ import DJIUXSDK
 
 class MainViewController: UIViewController, DJISDKManagerDelegate {
     
+    @IBOutlet weak var connectStatusLabel: UILabel!
+    @IBOutlet weak var modelNameLabel: UILabel!
+    
+    @IBAction func onConnectButtonClicked(_ sender: Any) {
+        
+    }
     var product : DJIBaseProduct?
     
     override func viewDidLoad() {

@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IGQ-Zx-XDs">
-    <device id="retina4_7" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IGQ-Zx-XDs">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="PlaybackDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-YS-lEl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-YS-lEl">
                                 <rect key="frame" x="216" y="270" width="235" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="dd2-6b-xCb"/>
@@ -37,7 +34,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DJI PlaybackDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2U-2V-6TO">
-                                <rect key="frame" x="220.5" y="50" width="226" height="21"/>
+                                <rect key="frame" x="220.5" y="30" width="226" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bbH-ka-Qvg"/>
                                     <constraint firstAttribute="width" constant="226" id="dv1-xk-SUV"/>
@@ -47,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model: Not Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAT-dJ-O9w">
-                                <rect key="frame" x="181" y="184" width="305" height="21"/>
+                                <rect key="frame" x="181" y="164" width="305" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="305" id="86e-g0-YXl"/>
                                     <constraint firstAttribute="height" constant="21" id="xGw-CU-V5c"/>
@@ -57,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product  Connection Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-2P-9c8">
-                                <rect key="frame" x="138.5" y="122" width="390" height="21"/>
+                                <rect key="frame" x="138.5" y="102" width="390" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="390" id="Sme-mb-dtk"/>
                                     <constraint firstAttribute="height" constant="21" id="Sx0-8P-N35"/>
@@ -87,9 +84,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="zFd-PV-DOq"/>
                     <connections>
-                        <outlet property="connectButton" destination="APQ-YS-lEl" id="YKr-dd-IYC"/>
-                        <outlet property="connectStatusLabel" destination="YEs-2P-9c8" id="tPA-lV-ygC"/>
-                        <outlet property="modelNameLabel" destination="kAT-dJ-O9w" id="qdT-gf-bvN"/>
+                        <outlet property="connectStatusLabel" destination="YEs-2P-9c8" id="bmt-ci-CN4"/>
+                        <outlet property="modelNameLabel" destination="kAT-dJ-O9w" id="zTS-R1-qXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-VX-hvb">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="-20" width="667" height="395"/>
                                 <connections>
                                     <segue destination="N9L-6Q-4Aa" kind="embed" id="hOI-ad-9al"/>
                                 </connections>
@@ -171,10 +167,10 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDo-nm-H51" userLabel="PlaybackBtns">
-                                <rect key="frame" x="68" y="15" width="491" height="40"/>
+                                <rect key="frame" x="67.5" y="-5" width="491" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORo-fy-MPu">
-                                        <rect key="frame" x="4" y="3" width="70" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORo-fy-MPu">
+                                        <rect key="frame" x="4" y="2.5" width="70" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="7i1-FO-crX">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="70"/>
@@ -188,8 +184,8 @@
                                             <action selector="multiPreviewButtonClicked:" destination="Zpp-gR-biJ" eventType="touchUpInside" id="qUd-kW-zQ2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C86-VQ-3Co">
-                                        <rect key="frame" x="82" y="3" width="70" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C86-VQ-3Co">
+                                        <rect key="frame" x="82" y="2.5" width="70" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="iAi-iG-94x">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="70"/>
@@ -203,8 +199,8 @@
                                             <action selector="stopVideoBtnAction:" destination="Zpp-gR-biJ" eventType="touchUpInside" id="eF7-Dh-jNG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-DE-vzu">
-                                        <rect key="frame" x="325" y="3" width="70" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-DE-vzu">
+                                        <rect key="frame" x="325" y="2.5" width="70" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="S7C-sI-Alx">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -220,8 +216,8 @@
                                             <action selector="deleteButtonAction:" destination="Zpp-gR-biJ" eventType="touchUpInside" id="PAW-Bo-kEe"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lM-MQ-7Oy">
-                                        <rect key="frame" x="238" y="3" width="80" height="35"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lM-MQ-7Oy">
+                                        <rect key="frame" x="238" y="2.5" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="HNc-0w-NbJ">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="80"/>
@@ -237,8 +233,8 @@
                                             <action selector="selectAllBtnAction:" destination="Zpp-gR-biJ" eventType="touchUpInside" id="70c-Vp-pIv"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-Vs-ZI8">
-                                        <rect key="frame" x="160" y="3" width="70" height="35"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-Vs-ZI8">
+                                        <rect key="frame" x="160" y="2.5" width="70" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="78" id="5nL-8O-PFI">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="70"/>
@@ -254,8 +250,8 @@
                                             <action selector="selectButtonAction:" destination="Zpp-gR-biJ" eventType="touchUpInside" id="s6z-oD-2bz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7y-dO-jOP">
-                                        <rect key="frame" x="402" y="3" width="80" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7y-dO-jOP">
+                                        <rect key="frame" x="402" y="2.5" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="CY1-2N-yuQ">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -298,8 +294,8 @@
                                     <constraint firstItem="ORo-fy-MPu" firstAttribute="centerY" secondItem="PDo-nm-H51" secondAttribute="centerY" id="wU5-4r-9HW"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cW-ea-Esl">
-                                <rect key="frame" x="10" y="18" width="50" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cW-ea-Esl">
+                                <rect key="frame" x="9.5" y="-2" width="50" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Tag-oM-nfX">
                                         <variation key="heightClass=regular-widthClass=regular" constant="84"/>
@@ -385,7 +381,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wTg-tr-So5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W0R-Tr-zQs">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="395"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -400,7 +396,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="IGQ-Zx-XDs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2F7-SE-LlE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -414,7 +409,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn" width="172" height="51"/>
+        <image name="btn" width="172.5" height="51"/>
         <image name="playVideo" width="109" height="109"/>
         <image name="playback_icon" width="34" height="27"/>
     </resources>
