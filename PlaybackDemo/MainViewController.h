@@ -6,10 +6,10 @@
 //  Copyright © 2017 DJI. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
-
-
-@end
+//@interface MainViewController : UIViewController
+//
+//
+//@end
 

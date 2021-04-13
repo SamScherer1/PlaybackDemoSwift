@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A3C14DD2625F62800CDD27D /* DefaultLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */; };
 		3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DE2625F80100CDD27D /* DemoUtility.swift */; };
+		3A3C14F12626100900CDD27D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14F02626100900CDD27D /* MainViewController.swift */; };
 		A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E721F73640C0023C6F0 /* AppDelegate.m */; };
 		A4E00E891F73640C0023C6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E731F73640C0023C6F0 /* Assets.xcassets */; };
 		A4E00E8A1F73640C0023C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */; };
@@ -41,6 +42,7 @@
 		3A3C14DB2625F62700CDD27D /* PlaybackDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaybackDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayoutViewController.swift; sourceTree = "<group>"; };
 		3A3C14DE2625F80100CDD27D /* DemoUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUtility.swift; sourceTree = "<group>"; };
+		3A3C14F02626100900CDD27D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4314AFD2970DB5178B571574 /* Pods_PlaybackDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaybackDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E44FC47D98B416B82B08048 /* Pods-PlaybackDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8D038CCF8617728F1DAE4F88 /* Pods-PlaybackDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				A4E00E7F1F73640C0023C6F0 /* main.m */,
 				A4E00E801F73640C0023C6F0 /* MainViewController.h */,
 				A4E00E811F73640C0023C6F0 /* MainViewController.m */,
+				3A3C14F02626100900CDD27D /* MainViewController.swift */,
 				A4E00E821F73640C0023C6F0 /* PlaybackViewController.h */,
 				A4E00E831F73640C0023C6F0 /* PlaybackViewController.m */,
 				A4E00E841F73640C0023C6F0 /* xibs */,
@@ -281,6 +284,7 @@
 				A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */,
 				A4E00E921F73640C0023C6F0 /* PlaybackViewController.m in Sources */,
 				A4E00E8C1F73640C0023C6F0 /* DefaultLayoutViewController.m in Sources */,
+				3A3C14F12626100900CDD27D /* MainViewController.swift in Sources */,
 				A4E00E901F73640C0023C6F0 /* main.m in Sources */,
 				3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */,
 			);
