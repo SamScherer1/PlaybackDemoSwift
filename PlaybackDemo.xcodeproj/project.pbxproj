@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3C14DD2625F62800CDD27D /* DefaultLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */; };
+		3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14DE2625F80100CDD27D /* DemoUtility.swift */; };
 		A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E721F73640C0023C6F0 /* AppDelegate.m */; };
 		A4E00E891F73640C0023C6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E731F73640C0023C6F0 /* Assets.xcassets */; };
 		A4E00E8A1F73640C0023C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E741F73640C0023C6F0 /* LaunchScreen.storyboard */; };
 		A4E00E8B1F73640C0023C6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E761F73640C0023C6F0 /* Main.storyboard */; };
 		A4E00E8C1F73640C0023C6F0 /* DefaultLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */; };
-		A4E00E8D1F73640C0023C6F0 /* DemoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7B1F73640C0023C6F0 /* DemoUtility.m */; };
 		A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */; };
 		A4E00E901F73640C0023C6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E7F1F73640C0023C6F0 /* main.m */; };
 		A4E00E911F73640C0023C6F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E811F73640C0023C6F0 /* MainViewController.m */; };
@@ -37,6 +38,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A3C14DB2625F62700CDD27D /* PlaybackDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaybackDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayoutViewController.swift; sourceTree = "<group>"; };
+		3A3C14DE2625F80100CDD27D /* DemoUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUtility.swift; sourceTree = "<group>"; };
 		4314AFD2970DB5178B571574 /* Pods_PlaybackDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaybackDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E44FC47D98B416B82B08048 /* Pods-PlaybackDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8D038CCF8617728F1DAE4F88 /* Pods-PlaybackDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaybackDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +53,6 @@
 		A4E00E781F73640C0023C6F0 /* DefaultLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultLayoutViewController.h; sourceTree = "<group>"; };
 		A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultLayoutViewController.m; sourceTree = "<group>"; };
 		A4E00E7A1F73640C0023C6F0 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtility.h; sourceTree = "<group>"; };
-		A4E00E7B1F73640C0023C6F0 /* DemoUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtility.m; sourceTree = "<group>"; };
 		A4E00E7C1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIPlaybackMultiSelectViewController.h; sourceTree = "<group>"; };
 		A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIPlaybackMultiSelectViewController.m; sourceTree = "<group>"; };
 		A4E00E7E1F73640C0023C6F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,8 +123,9 @@
 				A4E00E761F73640C0023C6F0 /* Main.storyboard */,
 				A4E00E781F73640C0023C6F0 /* DefaultLayoutViewController.h */,
 				A4E00E791F73640C0023C6F0 /* DefaultLayoutViewController.m */,
+				3A3C14DC2625F62800CDD27D /* DefaultLayoutViewController.swift */,
 				A4E00E7A1F73640C0023C6F0 /* DemoUtility.h */,
-				A4E00E7B1F73640C0023C6F0 /* DemoUtility.m */,
+				3A3C14DE2625F80100CDD27D /* DemoUtility.swift */,
 				A4E00E7C1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.h */,
 				A4E00E7D1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m */,
 				A4E00E7E1F73640C0023C6F0 /* Info.plist */,
@@ -131,6 +135,7 @@
 				A4E00E821F73640C0023C6F0 /* PlaybackViewController.h */,
 				A4E00E831F73640C0023C6F0 /* PlaybackViewController.m */,
 				A4E00E841F73640C0023C6F0 /* xibs */,
+				3A3C14DB2625F62700CDD27D /* PlaybackDemo-Bridging-Header.h */,
 			);
 			path = PlaybackDemo;
 			sourceTree = "<group>";
@@ -157,7 +162,6 @@
 				A48847C21EA2697F00CE5843 /* Frameworks */,
 				A48847C31EA2697F00CE5843 /* Resources */,
 				B67F77260A1CB8541637B104 /* [CP] Embed Pods Frameworks */,
-				A05A9B2EAF8E7AA92BB852FD /* [CP] Copy Pods Resources */,
 				A469862E213D2151001A1F08 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -180,7 +184,8 @@
 				TargetAttributes = {
 					A48847C41EA2697F00CE5843 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 7UL3LRJL93;
+						DevelopmentTeam = R725LZS4G8;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -227,28 +232,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaybackDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A05A9B2EAF8E7AA92BB852FD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B67F77260A1CB8541637B104 /* [CP] Embed Pods Frameworks */ = {
@@ -257,13 +250,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${PODS_ROOT}/DJI-UXSDK-iOS/iOS_UX_SDK/DJIUXSDK.framework",
+				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
+				"${BUILT_PRODUCTS_DIR}/DJIWidget/DJIWidget.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIUXSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIWidget.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaybackDemo/Pods-PlaybackDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -273,13 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4E00E8D1F73640C0023C6F0 /* DemoUtility.m in Sources */,
 				A4E00E911F73640C0023C6F0 /* MainViewController.m in Sources */,
+				3A3C14DD2625F62800CDD27D /* DefaultLayoutViewController.swift in Sources */,
 				A4E00E881F73640C0023C6F0 /* AppDelegate.m in Sources */,
 				A4E00E8E1F73640C0023C6F0 /* DJIPlaybackMultiSelectViewController.m in Sources */,
 				A4E00E921F73640C0023C6F0 /* PlaybackViewController.m in Sources */,
 				A4E00E8C1F73640C0023C6F0 /* DefaultLayoutViewController.m in Sources */,
 				A4E00E901F73640C0023C6F0 /* main.m in Sources */,
+				3A3C14DF2625F80100CDD27D /* DemoUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +403,8 @@
 			baseConfigurationReference = 6E44FC47D98B416B82B08048 /* Pods-PlaybackDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R725LZS4G8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,8 +414,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PlaybackDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.PlaybackDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemoSwiftRIIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlaybackDemo/PlaybackDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
@@ -422,7 +429,8 @@
 			baseConfigurationReference = 8D038CCF8617728F1DAE4F88 /* Pods-PlaybackDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R725LZS4G8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,8 +440,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PlaybackDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.PlaybackDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemoSwiftRIIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlaybackDemo/PlaybackDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7s";
 			};

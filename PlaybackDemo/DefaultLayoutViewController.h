@@ -6,8 +6,8 @@
 //  Copyright © 2017 DJI. All rights reserved.
 //
 
-#import <DJIUXSDK/DJIUXSDK.h>
-
-@interface DefaultLayoutViewController : DUXDefaultLayoutViewController
-
-@end
+//#import <DJIUXSDK/DJIUXSDK.h>
+//
+//@interface DefaultLayoutViewController : DUXDefaultLayoutViewController
+//
+//@end

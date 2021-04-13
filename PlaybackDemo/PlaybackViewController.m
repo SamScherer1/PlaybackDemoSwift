@@ -9,6 +9,8 @@
 #import "PlaybackViewController.h"
 #import "DemoUtility.h"
 #import "DJIPlaybackMultiSelectViewController.h"
+#import <DJISDK/DJISDK.h>
+#import <PlaybackDemo-Swift.h>
 
 @interface PlaybackViewController ()<DJICameraDelegate, DJIPlaybackDelegate>
 
@@ -56,7 +58,8 @@
     if (camera != nil) {
         [camera setMode:DJICameraModePlayback withCompletion:^(NSError * _Nullable error) {
             if (error) {
-                ShowResult(@"Set CameraWorkModePlayback Failed, %@", error.description);
+                NSString *resultString = [NSString stringWithFormat:@"Set CameraWorkModePlayback Failed, %@", error.description];
+                [DemoUtility showResultWithResult:resultString];
             }
         }];
         camera.delegate = self;
@@ -72,7 +75,7 @@
     DJICamera *camera = [DemoUtility fetchCamera];
     [camera setMode:DJICameraModeShootPhoto withCompletion:^(NSError * _Nullable error) {
         if (error) {
-            ShowResult(@"Set CameraWorkModeShootPhoto Failed, %@", error.description);
+            //ShowResult(@"Set CameraWorkModeShootPhoto Failed, %@", error.description);
         }
     }];
     
@@ -192,7 +195,7 @@
     if (camera != nil) {
         [camera setMode:DJICameraModePlayback withCompletion:^(NSError * _Nullable error) {
             if (error) {
-                ShowResult(@"Set CameraWorkModePlayback Failed, %@", error.description);
+                [DemoUtility showResultWithResult:[NSString stringWithFormat:@"Set CameraWorkModePlayback Failed, %@", error.description]];
             }
         }];
         camera.delegate = self;

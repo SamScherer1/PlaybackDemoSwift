@@ -6,10 +6,10 @@
 //  Copyright © 2016 Demo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import <DJISDK/DJISDK.h>
-
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+//#import <DJISDK/DJISDK.h>
+//
 #define WeakRef(__obj) __weak typeof(self) __obj = self
 #define WeakReturn(__obj) if(__obj ==nil)return;
 
@@ -25,14 +25,14 @@
 
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 667)
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 568)
-
-extern void ShowResult(NSString *format, ...);
-
-@interface DemoUtility : NSObject
-
-+(DJIBaseProduct*) fetchProduct;
-+(DJICamera*) fetchCamera;
-+(DJIAircraft*) fetchAircraft;
-+(DJIFlightController*) fetchFlightController;
-
-@end
+//
+//extern void ShowResult(NSString *format, ...);
+//
+//@interface DemoUtility : NSObject
+//
+//+(DJIBaseProduct*) fetchProduct;
+//+(DJICamera*) fetchCamera;
+//+(DJIAircraft*) fetchAircraft;
+//+(DJIFlightController*) fetchFlightController;
+//
+//@end
