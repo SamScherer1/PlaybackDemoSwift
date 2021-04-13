@@ -48,6 +48,25 @@ class MainViewController: UIViewController, DJISDKManagerDelegate {
         }
     }
     
+    func productDisconnected() {
+        let message = "Connection lost. Back to root. "
+        let cancelAction = UIAlertAction.init(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+        let backAction = UIAlertAction.init(title: "Back", style: UIAlertAction.Style.default) { (action: UIAlertAction) in
+            if !(self.navigationController?.topViewController is MainViewController) {//TODO: why not delete this check? what's the harm in popping anyway?
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
+        let alertViewController = UIAlertController.init(title: nil, message: message, preferredStyle: UIAlertController.Style.alert)
+        alertViewController.addAction(cancelAction)
+        alertViewController.addAction(backAction)
+        let navController = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        navController.present(alertViewController, animated: true, completion: nil)
+        
+        self.connectButton.isEnabled = false
+        self.product = nil
+        self.updateStatusBasedOn(product: self.product)
+    }
+    
     func updateStatusBasedOn(product:DJIBaseProduct?) {
         self.connectStatusLabel.text = NSLocalizedString("Status: Product Connected", comment: "")
         if let product = product {
