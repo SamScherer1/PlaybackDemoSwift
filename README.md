@@ -73,7 +73,10 @@ installed.
 
 For this demo's tutorial: **Creating a Photo and Video Playback Application**, please refer to <https://developer.dji.com/mobile-sdk/documentation/ios-tutorials/PlaybackDemo.html>.
 
-The tutorial is currently only available in Objective C, but there are plans to create a Swift version.
+The tutorial is currently only available in Objective C.
+
+## Known Issues
+PlaybackDemoSwift hasn't been completely converted to swift from its Objective C counterpart. 
 
 
 ## Feedback
