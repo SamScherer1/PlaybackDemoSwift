@@ -76,7 +76,7 @@ For this demo's tutorial: **Creating a Photo and Video Playback Application**, p
 The tutorial is currently only available in Objective C.
 
 ## Known Issues
-PlaybackDemoSwift hasn't been completely converted to swift from its Objective C counterpart. 
+PlaybackDemoSwift hasn't been completely converted to Swift from its Objective C counterpart. 
 
 
 ## Feedback
