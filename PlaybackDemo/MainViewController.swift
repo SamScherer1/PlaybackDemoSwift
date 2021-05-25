@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import DJIUXSDK
 
+let kUseBridge = false
+let kBridgeIPAddress = "192.168.128.169"
+
 class MainViewController: UIViewController, DJISDKManagerDelegate {
     
     @IBOutlet weak var connectStatusLabel: UILabel!
@@ -83,8 +86,11 @@ class MainViewController: UIViewController, DJISDKManagerDelegate {
         if let error = error {
             DemoUtility.showResult(result: NSString.init(format: "Registration Error %@", error.localizedDescription))
         } else {
-            DemoUtility.showResult(result: "Registration Success")
-            DJISDKManager.startConnectionToProduct()
+            if kUseBridge {
+                DJISDKManager.enableBridgeMode(withBridgeAppIP: kBridgeIPAddress)
+            } else {
+                DemoUtility.showResult(result: "Registration Success")
+            }
         }
     }
     
